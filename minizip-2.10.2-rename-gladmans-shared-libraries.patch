@@ -1,0 +1,32 @@
+From 3f9345400bec0676acbb023e0755fc7daee6a26a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Patrik=20Novotn=C3=BD?= <panovotn@redhat.com>
+Date: Tue, 27 Oct 2020 10:08:31 +0100
+Subject: [PATCH] Rename Brian Gladman's shared libraries
+
+---
+ CMakeLists.txt | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 4f775d8..b3e0649 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -521,12 +521,12 @@ if(MZ_BRG)
+         lib/sha/sha1.h
+         lib/sha/sha2.h)
+ 
+-    add_library(aes STATIC ${BRG_AES_SRC} ${BRG_AES_HDR})
+-    add_library(sha STATIC ${BRG_SHA_SRC} ${BRG_SHA_HDR})
++    add_library(aes-gladman STATIC ${BRG_AES_SRC} ${BRG_AES_HDR})
++    add_library(sha-gladman STATIC ${BRG_SHA_SRC} ${BRG_SHA_HDR})
+ 
+     list(APPEND MINIZIP_SRC mz_crypt_brg.c)
+     list(APPEND MINIZIP_INC lib/aes lib/sha)
+-    list(APPEND MINIZIP_DEP aes sha)
++    list(APPEND MINIZIP_DEP aes-gladman sha-gladman)
+ endif()
+ 
+ # Include compatibility layer
+-- 
+2.26.2
+
