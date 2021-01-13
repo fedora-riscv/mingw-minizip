@@ -16,6 +16,7 @@ Patch0:        minizip-2.10.2-BRG_FORCE_FETCH.patch
 # Rename gladmans shared libraries
 Patch1:        minizip-2.10.2-rename-gladmans-shared-libraries.patch
 
+BuildRequires: make
 BuildRequires: cmake
 
 BuildRequires: mingw32-curl
