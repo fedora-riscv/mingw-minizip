@@ -3,7 +3,7 @@
 %global pkgname minizip
 
 Name:          mingw-%{pkgname}
-Version:       3.0.0
+Version:       3.0.1
 Release:       1%{?dist}
 Summary:       MinGW Windows %{pkgname} library
 
@@ -88,6 +88,9 @@ MINGW64_CMAKE_ARGS="-DINSTALL_INC_DIR=%{mingw64_includedir}/%{pkgname}" \
 
 
 %changelog
+* Fri Apr 16 2021 Sandro Mani <manisandro@gmail.com> - 3.0.1-1
+- Update to 3.0.1
+
 * Wed Feb 10 2021 Sandro Mani <manisandro@gmail.com> - 3.0.0-1
 - Update to 3.0.0
 

@@ -1,7 +1,7 @@
-diff -rupN minizip-ng-3.0.0/CMakeLists.txt minizip-ng-3.0.0-new/CMakeLists.txt
---- minizip-ng-3.0.0/CMakeLists.txt	2021-01-24 01:57:55.000000000 +0100
-+++ minizip-ng-3.0.0-new/CMakeLists.txt	2021-02-10 19:32:02.731705949 +0100
-@@ -683,6 +683,9 @@ set_target_properties(${PROJECT_NAME} PR
+diff -rupN --no-dereference minizip-ng-3.0.1/CMakeLists.txt minizip-ng-3.0.1-new/CMakeLists.txt
+--- minizip-ng-3.0.1/CMakeLists.txt	2021-03-05 02:35:25.000000000 +0100
++++ minizip-ng-3.0.1-new/CMakeLists.txt	2021-04-16 09:26:35.298018909 +0200
+@@ -698,6 +698,9 @@ set_target_properties(${PROJECT_NAME} PR
                        SOVERSION ${SOVERSION}
                        LINKER_LANGUAGE C
                        DEFINE_SYMBOL "MZ_EXPORTS")
