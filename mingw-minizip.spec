@@ -4,7 +4,7 @@
 
 Name:          mingw-%{pkgname}
 Version:       3.0.2
-Release:       4%{?dist}
+Release:       5%{?dist}
 Summary:       MinGW Windows %{pkgname} library
 
 BuildArch:     noarch
@@ -88,6 +88,9 @@ MINGW64_CMAKE_ARGS="-DINSTALL_INC_DIR=%{mingw64_includedir}/%{pkgname}" \
 
 
 %changelog
+* Fri Mar 25 2022 Sandro Mani <manisandro@gmail.com> - 3.0.2-5
+- Rebuild with mingw-gcc-12
+
 * Thu Feb 17 2022 Sandro Mani <manisandro@gmail.com> - 3.0.2-4
 - Rebuild (openssl)
 
