@@ -8,7 +8,7 @@ Release:       1%{?dist}
 Summary:       MinGW Windows %{pkgname} library
 
 BuildArch:     noarch
-License:       zlib
+License:       Zlib
 URL:           https://github.com/zlib-ng/minizip-ng
 Source0:       https://github.com/zlib-ng/minizip-ng/archive/%{version}/%{pkgname}-%{version}.tar.gz
 # Add a library version
