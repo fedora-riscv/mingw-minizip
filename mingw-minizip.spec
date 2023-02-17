@@ -4,7 +4,7 @@
 
 Name:          mingw-%{pkgname}
 Version:       3.0.2
-Release:       6%{?dist}
+Release:       6.0%{?dist}
 Summary:       MinGW Windows %{pkgname} library
 
 BuildArch:     noarch
@@ -88,6 +88,9 @@ MINGW64_CMAKE_ARGS="-DINSTALL_INC_DIR=%{mingw64_includedir}/%{pkgname}" \
 
 
 %changelog
+* Fri Feb 17 2023 Liu Yang <Yang.Liu.sn@gmail.com> - 3.0.2-6.0
+- Rebuild for updated dependencies on riscv64.
+
 * Thu Jul 21 2022 Fedora Release Engineering <releng@fedoraproject.org> - 3.0.2-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
 
